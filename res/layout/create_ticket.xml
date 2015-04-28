@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey" >
+
+    <EditText
+        android:id="@+id/tvTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edittext_back"
+        android:ems="10"
+        android:hint="Тема"
+        android:inputType="textEmailAddress" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTheme"
+        android:layout_below="@+id/tvTheme"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_back"
+        android:entries="@array/cat_list"
+        android:hint="Страна" >
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/tvSrochno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategory"
+        android:layout_below="@+id/tvCategory"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_back"
+        android:entries="@array/s_list" >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/tvCategory"
+        android:layout_below="@+id/tvSrochno"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_back"
+        android:ems="10"
+        android:hint="Текст сообщения" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvCategory"
+        android:layout_alignTop="@+id/tvCategory"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/tikets_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/tvSrochno"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/tikets_arrow" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMessage"
+        android:layout_alignRight="@+id/tvMessage"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_back_small"
+        android:text="СОЗДАТЬ ТИКЕТ"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

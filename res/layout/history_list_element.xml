@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/app_icon"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/app_icon"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/button_back_small"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="@string/description_button" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/app_icon"
+        android:src="@drawable/active" />
+
+    <TextView
+        android:id="@+id/appPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_marginRight="11dp"
+        android:text="+26" />
+
+
+</RelativeLayout>

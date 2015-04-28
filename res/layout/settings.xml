@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey" >
+
+    <EditText
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edittext_back"
+        android:ems="10"
+        android:hint="Электронная почта"
+        android:inputType="textEmailAddress" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/tvCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEmail"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_back"
+        android:entries="@array/clist"
+        android:hint="Страна" >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/tvPhNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCountry"
+        android:layout_below="@+id/tvCountry"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_back"
+        android:ems="10"
+        android:hint="Номер мобильного телефона"
+        android:inputType="phone" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/tvNewPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCountry"
+        android:layout_below="@+id/tvPhNumber"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_back"
+        android:ems="10"
+        android:hint="Новый пароль" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/tvNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCountry"
+        android:layout_below="@+id/tvNewPassWord"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_back"
+        android:ems="10"
+        android:hint="Ник в топе" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNickName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="* Ваш ник в топе" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exitButton"
+        android:layout_alignRight="@+id/tvNickName"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back_small"
+        android:text="СОХРАНИТЬ"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNickName"
+        android:layout_alignRight="@+id/tvNickName"
+        android:layout_below="@+id/saveButton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back_small_red"
+        android:text="ВЫЙТИ"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvCountry"
+        android:layout_alignTop="@+id/tvCountry"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/tikets_arrow" />
+
+</RelativeLayout>

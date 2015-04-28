@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#91be4c</color>
+    <color name="button_non_pressed_color">#91be4c</color>
+    <color name="button_pressed_color">#7f7f7f</color>
+    <color name="listview_devider_color">#91be4c</color>
+    <color name="gold_round_color">#f9d50d</color>
+    
+    <color name="button_text_color">#ffffff</color>
+    <color name="gold_round_text_color">#000000</color>
+    <color name="action_bar_text_color">#ffffff</color>
+    
+    <color name="app_grey">#ededed</color>
+    <color name="app_red">#fa6666</color>
+    
+      <color name="overscroll">#33b5e5</color>
+    
+</resources>
